@@ -51,19 +51,19 @@ function getFilmMetaContent()
     $metaContent = '<ul>';
 
     if ($countries) {
-        $metaContent .= "<li><strong>Countries:</strong> {$countries} </li>";
+        $metaContent .= "<li><strong>". __('Countries', 'unite-child') .":</strong> {$countries} </li>";
     }
 
     if ($genres) {
-        $metaContent .= "<li><strong>Genre:</strong> {$genres} </li>";
+        $metaContent .= "<li><strong>". __('Genre', 'unite-child') .":</strong> {$genres} </li>";
     }
 
     if ($ticketPrice) {
-        $metaContent .= "<li><strong>Ticket Price:</strong> {$ticketPrice} </li>";
+        $metaContent .= "<li><strong>". __('Ticket Price', 'unite-child') .":</strong> {$ticketPrice} </li>";
     }
 
     if ($releaseDate) {
-        $metaContent .= "<li><strong>Release Date:</strong> {$releaseDate} </li>";
+        $metaContent .= "<li><strong>". __('Release Date', 'unite-child') .":</strong> {$releaseDate} </li>";
     }
 
     $metaContent .= '</ul>';
