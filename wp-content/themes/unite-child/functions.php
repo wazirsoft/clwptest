@@ -11,6 +11,11 @@ require get_stylesheet_directory() . '/inc/register-taxonomies.php';
  */
 require get_stylesheet_directory() . '/inc/helper.php';
 
+/**
+ * Initiate shortcodes
+ */
+require get_stylesheet_directory() . '/inc/shortcodes.php';
+
 // Queue parent style followed by child/customized style
 add_action( 'wp_enqueue_scripts', 'unite_enqueue_child_styles', PHP_INT_MAX);
 
