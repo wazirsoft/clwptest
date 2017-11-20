@@ -31,8 +31,10 @@
 	</div><!-- .entry-content -->
 
 	<?php 
-		// get film meta like Release Date, Categories
-		get_template_part( 'templates/film', 'meta' ); 
+		if (!is_front_page()) {
+			// get film meta like Release Date, Categories
+			get_template_part( 'templates/film', 'meta' ); 
+		}
 	?>
 
 	<footer class="entry-meta">

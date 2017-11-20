@@ -6,7 +6,7 @@
 
 // display 5 films
 function latestFilmShortcode() {
-    $query = new WP_Query( array( 'post_type' => 'films', 'posts_per_page' => '5', ) );
+    $query = new WP_Query( array( 'post_type' => 'films', 'posts_per_page' => '5' ) );
     $latestFilms = '';
     
     if ( $query->have_posts() ) :
