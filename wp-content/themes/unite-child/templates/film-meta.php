@@ -1,25 +1,9 @@
 <?php
-global $post;
 
-$countries = wp_get_post_terms( get_the_ID(), 'countries', array("fields" => "names"));
-if (count($countries) > 0) {
-	$countries = implode(', ', $countries);
-}else {
-	$countires = false;
-}
-
-$genres = wp_get_post_terms( get_the_ID(), 'genres', array("fields" => "names"));
-if (count($genres) > 0) {
-	$genres = implode(', ', $genres);
-}else {
-	$genres = false;
-}
-
-$ticketPrice = get_field( "ticket_price" );
-$releaseDate = get_field( "release_date" );
+// get film meta using post id
+extract(getFilmMeta(get_the_ID()));
 
 ?>
-
 
 <ul>
 	<?php if ($countries) : ?>

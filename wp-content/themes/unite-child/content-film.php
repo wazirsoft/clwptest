@@ -30,7 +30,10 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php get_template_part( 'templates/film', 'meta' ); ?>
+	<?php 
+		// get film meta like Release Date, Categories
+		get_template_part( 'templates/film', 'meta' ); 
+	?>
 
 	<footer class="entry-meta">
 		<?php
